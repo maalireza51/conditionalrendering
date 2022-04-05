@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Sacramento:400');
+@import url('https://fonts.googleapis.com/css?family=Sacramento:400|Audiowide');
 
 body {
     margin: 0;
@@ -118,6 +118,14 @@ body {
     height: 100%;
 }
 
+.s-header{
+    font-family: "Audiowide", sans-serif;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #9203d9;
+}
+
 @media screen and (min-width:768px) {
     .sidebar {
         width: 320px;
@@ -157,7 +165,7 @@ body {
 
     30% {
         width: 150%;
-        height: 150%;
+        height: 300%;
     }
 
     50% {

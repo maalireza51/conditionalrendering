@@ -1,35 +1,34 @@
 import React, { Component } from 'react'
 import Chat from './Chat';
+import Login from './Login';
 
 export default class Enterform extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
-            logged: null,
+            logged: false,
             name: ''
         };
-        this.handleNameSubmit = this.handleNameSubmit.bind(this);
-        this.handleChange = this.handleChange.bind(this);
+        this.handleLogin = this.handleLogin.bind(this);
+        this.handleName = this.handleName.bind(this);
     }
-    handleNameSubmit(e) {
+    handleLogin(e) {
+        this.setState({ ...this.state, logged: !this.state.logged });
         e.preventDefault();
-        this.setState({...this.state,logged:true});
     }
-    handleChange(e) {
+    handleName(e) {
         this.setState({ name: e.target.value });
     }
     render() {
         if (this.state.logged) {
-            return <Chat name={this.state.name} />
+            return <Chat name={this.state.name} handlelogin={this.handleLogin} />
         } else {
             return (
-                <div id='enter-form' className='neon'>
-                    <h3>My chat app</h3>
-                    <form onSubmit={this.handleNameSubmit}>
-                        <input type='text' id="name" placeholder="Write your name . . ." value={this.state.name} onChange={this.handleChange} />
-                        <input type="submit" value="Enter" />
-                    </form>
-                </div>
+                <Login
+                    handleName={this.handleName}
+                    handleLogin={this.handleLogin}
+                    name={this.state.name}
+                />
             )
         }
     }
