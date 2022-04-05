@@ -56,7 +56,7 @@ body {
 #enter-form {
     font-size: 36px;
     font-family: "Sacramento", sans-serif;
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     padding: 20px 50px;
@@ -76,6 +76,21 @@ body {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+}
+
+#enter-form:after{
+    content: "";
+    position: absolute;
+    height:700%;
+    width:500%;
+    background-color: white;
+    animation: enter-form 1s forwards;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-animation: enter-form 1s forwards;
 }
 
 #enter-form.neon {
@@ -187,4 +202,9 @@ body {
         -ms-border-radius: 0;
         -o-border-radius: 0;
     }
+}
+
+@keyframes enter-form {
+    from{width: 500%;height:700%}
+    to{width:0;height: 0;}
 }
