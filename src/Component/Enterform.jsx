@@ -21,7 +21,7 @@ export default class Enterform extends Component {
     }
     render() {
         if (this.state.logged) {
-            return <Chat name={this.state.name} handlelogin={this.handleLogin} />
+            return <Chat name={this.state.name} handleLogin={this.handleLogin} />
         } else {
             return (
                 <Login
