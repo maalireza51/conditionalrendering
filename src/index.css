@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Sacramento:400|Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Sacramento:400|Audiowide|Grape+Nuts');
 
 body {
     margin: 0;
@@ -78,11 +78,11 @@ body {
     -o-transform: translate(-50%, -50%);
 }
 
-#enter-form:after{
+#enter-form:after {
     content: "";
     position: absolute;
-    height:700%;
-    width:500%;
+    height: 700%;
+    width: 500%;
     background-color: white;
     animation: enter-form 1s forwards;
     border-radius: 50%;
@@ -133,12 +133,51 @@ body {
     height: 100%;
 }
 
-.s-header{
+.s-header {
     font-family: "Audiowide", sans-serif;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     color: #9203d9;
+    border-bottom: 1px solid #ddd;
+}
+
+.s-chats {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+.s-chats:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.s-chats img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.s-chats p,
+.s-chats h4 {
+    font-family: sans-serif;
+    margin: 0;
+    padding-top: 12px;
+}
+
+.s-chats.active{
+    background-color: #9203d9;
+    color: white;
+    padding-left:10px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 @media screen and (min-width:768px) {
@@ -191,7 +230,7 @@ body {
         -moz-border-radius: 0;
         -ms-border-radius: 0;
         -o-border-radius: 0;
-}
+    }
 
     100% {
         width: 100%;
@@ -205,6 +244,13 @@ body {
 }
 
 @keyframes enter-form {
-    from{width: 500%;height:700%}
-    to{width:0;height: 0;}
+    from {
+        width: 500%;
+        height: 700%
+    }
+
+    to {
+        width: 0;
+        height: 0;
+    }
 }
