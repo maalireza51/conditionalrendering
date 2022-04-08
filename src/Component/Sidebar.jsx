@@ -15,7 +15,7 @@ export default class Sidebar extends Component {
         { id: 2, name: "Mehdi", message: "hello.how are you?" },
         { id: 3, name: "Reza", message: "hello.how are you?" },
       ],
-      actived: null,
+      actived: this.props.id,
     }
     this.clickHandler = this.clickHandler.bind(this);
   }

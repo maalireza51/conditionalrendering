@@ -49,10 +49,10 @@ body {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    -webkit-transform:;
-    -moz-transform:;
-    -ms-transform:;
-    -o-transform:;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 #enter-form:after {
@@ -83,7 +83,7 @@ body {
         0 0 151px #bc13fe;
 }
 
-#enter-form form{
+#enter-form form {
     display: flex;
     flex-wrap: nowrap;
 }
@@ -141,7 +141,7 @@ body {
 }
 
 .content {
-    width: 100%;
+    flex: content;
     height: 100%;
 }
 
@@ -181,10 +181,10 @@ img {
     padding-top: 12px;
 }
 
-.s-chats.active{
+.s-chats.active {
     background-color: #9203d9;
     color: white;
-    padding-left:10px;
+    padding-left: 10px;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -192,7 +192,7 @@ img {
     -o-transition: 0.5s;
 }
 
-.content{
+.content {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -202,58 +202,59 @@ img {
     font-family: "Audiowide", sans-serif;
     padding: 10px 20px;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     color: #9203d9;
     border-bottom: 2px solid #ddd;
 }
 
-.c-messagebox{
+.c-messagebox {
     font-family: sans-serif;
     height: 100%;
     background-color: #ddf;
     overflow: auto;
 }
 
-.c-messagebox img{
+.c-messagebox img {
     vertical-align: middle;
 }
 
-.message-row p{
+.message-row p {
     margin: 0;
 }
 
-.message-row.me{
+.message-row.me {
     direction: rtl;
 }
 
-.message-row.me .message{
+.message-row.me .message {
     background-color: #9203d9;
     color: white;
 }
 
-.message-row.me .message p{
+.message-row.me .message p {
     direction: ltr;
 }
 
-.message{
+.message {
     display: inline-block;
     background-color: white;
     padding: 10px;
     margin-top: 10px;
     width: 300px;
 }
-.message div{
+
+.message div {
     color: #ccc;
     font-size: 12px;
     text-align: right;
 }
 
-.input{
-    padding:8px;
+.input {
+    padding: 8px;
     display: flex;
 }
 
-.input .text{
+.input .text {
     border: 1px solid rgb(254, 249, 255);
     background-color: #e7e7f4;
     border-radius: 20px;
@@ -265,7 +266,7 @@ img {
     -o-border-radius: 20px;
 }
 
-.input button{
+.input button {
     border: 0;
     border-radius: 50%;
     font-size: 20px;
@@ -297,7 +298,7 @@ img {
         -moz-border-radius: 0;
         -ms-border-radius: 0;
         -o-border-radius: 0;
-    }
+}
 
     #enter-form {
         border: 0;
@@ -307,6 +308,10 @@ img {
         -moz-border-radius: 0;
         -ms-border-radius: 0;
         -o-border-radius: 0;
+}
+
+    .message{
+        width: 200px;
     }
 }
 
