@@ -67,7 +67,7 @@ body {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    -webkit-animation:;
+    -webkit-animation: enter-form 1s forwards;
 }
 
 #enter-form.neon {
@@ -81,6 +81,11 @@ body {
         0 0 92px #bc13fe,
         0 0 102px #bc13fe,
         0 0 151px #bc13fe;
+}
+
+#enter-form form{
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 #enter-form form input {
@@ -116,16 +121,17 @@ body {
     animation: helloanim 1.5s forwards;
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    -webkit-transform:;
-    -moz-transform:;
-    -ms-transform:;
-    -o-transform:;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     -webkit-animation: helloanim 1.5s forwards;
     z-index: 1100;
+    overflow: hidden;
 }
 
 .sidebar {
