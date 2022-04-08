@@ -22,6 +22,7 @@ export default class Sidebar extends Component {
 
   clickHandler(id) {
     this.setState({actived:id});
+    this.props.handlePhoneClick(id);
   }
 
   render() {
