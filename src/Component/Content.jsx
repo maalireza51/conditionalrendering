@@ -13,10 +13,7 @@ export default function Content(props) {
         <a href='#'><FontAwesomeIcon icon={faSearch}></FontAwesomeIcon></a>
       </div>
       <Messagebox />
-      <form className='input'>
-        <input type="text" className="text" />
-        <button type="submit"><FontAwesomeIcon icon={faPaperPlane}></FontAwesomeIcon></button>
-      </form>
+      <Send/>
     </div>
   )
 }
