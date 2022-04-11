@@ -4,14 +4,12 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import Messagebox from './Messagebox'
+import Cheader from './Cheader'
 
 export default function Content(props) {
   return (
     <div className='content'>
-      <div className='c-header'>
-        <a href='#' onClick={props.handleBack}><FontAwesomeIcon icon={faArrowLeft}></FontAwesomeIcon></a>
-        <a href='#'><FontAwesomeIcon icon={faSearch}></FontAwesomeIcon></a>
-      </div>
+      <Cheader handleBack={props.handleBack}/>
       <Messagebox />
       <Send/>
     </div>
