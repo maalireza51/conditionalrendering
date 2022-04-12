@@ -1,10 +1,7 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import Messagebox from './Messagebox'
 import Cheader from './Cheader'
+import Send from './Send'
 
 export default function Content(props) {
   return (
