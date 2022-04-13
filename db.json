@@ -1,19 +1,20 @@
 {
-    "posts": [
+    "Alireza": [
         {
             "id": 1,
-            "title": "json-server",
-            "author": "typicode"
+            "message":"hello Alireza"
         }
     ],
-    "comments": [
+    "Ali": [
         {
-            "id": 1,
-            "body": "some comment",
-            "postId": 1
+            "id": 2,
+            "message":"hello Ali"
         }
     ],
-    "profile": {
-        "name": "typicode"
-    }
+    "Reza": [
+        {
+            "id": 3,
+            "message":"hello Reza"
+        }
+    ]
 }
